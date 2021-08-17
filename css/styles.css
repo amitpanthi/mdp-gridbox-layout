@@ -1,0 +1,92 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-wrapper{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 2fr 1fr 2fr 4fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "box1 box2 box2 box3 box4"
+    "box5 box2 box2 box3 box6"
+    "box7 box8 box9 box3 box10"
+    "box11 box11 box11 box3 box12";
+    grid-gap: 0.25rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.d1{
+    grid-area: box1;
+    background-color: #C9316B;
+}
+
+.d2{
+    grid-area: box2;
+    background-color: #CA319D;
+}
+
+.d3{
+    grid-area: box3;
+    background-color: #ED6E62;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 50%;
+}
+
+.d4{
+    grid-area: box4;
+    background-color: #EFC437;
+}
+
+.d5{
+    grid-area: box5;
+    background-color: #538C45;
+}
+
+.d6{
+    grid-area: box6;
+    background-color: #267C87;
+}
+
+.d7{
+    grid-area: box7;
+    background-color: #799928;
+}
+
+.d8{
+    grid-area: box8;
+    background-color: #478755;
+}
+
+.d9{
+    grid-area: box9;
+    background-color: #30C9C2;
+}
+
+.d10{
+    grid-area: box10;
+    background-color: #31C98F;
+}
+
+.d11{
+    grid-area: box11;
+    background-color: #544079;
+}
+
+.d12{
+    grid-area: box12;
+    background-color: #DE212F;
+}
+
+.box{
+    padding-top: 15%;
+    font-weight: bolder;
+}
